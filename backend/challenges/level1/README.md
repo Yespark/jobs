@@ -20,6 +20,6 @@ Les attributs qui diffèrent entre le fichier d'entrée et de sortir sont :
 L'application web prendra la forme d'une interface administrateur (backoffice dans le jargon) qui contient les pages suivantes :
 - la page d'accueil, avec un tableau de tous les parkings et leurs attributs, et la possibilité de créer ou de supprimer un parking ;
 - une page d'édition d'un parking, avec la possibilité de modifier ses attributs ;
-- une page enfin qui affiche une carte Google Maps de la France, avec un marquer pour chaque parking.
+- une page enfin qui affiche une carte Google Maps de la France, avec un marker pour chaque parking.
 
 Pour information, la création d'une application web sur la plate-forme Heroku prend moins de 5 minutes, comme l'explique cette [vidéo](https://vimeo.com/6916740) (vimeo).
