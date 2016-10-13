@@ -10,16 +10,16 @@ Yespark est le leader en France de la locaction de parking au mois. Notre backen
 
 ### Créer une application web sur Heroku qui permette de créer, modifier et supprimer des objets `Parking`.
 
-On se donne comme entrée le fichier `input.json`, l'objectif est de créer le fichier `output.json`.
-Les attributs qui diffèrent entre le fichier d'entrée et de sortir sont :
+On se donne comme entrée le fichier `parkings_input.json`, l'objectif est de créer une vue qui liste les parkings avec les attributs du fichier `parkings_output.json`.
+Les attributs qui diffèrent entre le fichier d'entrée et de sortie sont :
 - `id`, de type `integer`, qui représente l'identifiant du parking dans la base de données ;
 - `lat` et `lng`, de type `float`, qui représentent les coordonéees du parking. Il s'agit donc de trouver ces coordonnées à partir de l'adresse du parking. On pourra notamment s'appuyer sur la gem [Geokit](https://github.com/geokit/geokit) ;
 - `slug`, de type `string`, qui représente un label court, qui identifie de manière unique un parking ;
 - `district`, de type `string`, qui représente l'arrondissement, différent de `"0"` si la ville est Paris.
 
-L'application web prendra la forme d'une interface administrateur (backoffice dans le jargon) qui contient les pages suivantes :
+L'application web prendra la forme d'un backoffice dans le jargon qui contient les pages suivantes :
 - la page d'accueil, avec un tableau de tous les parkings et leurs attributs, et la possibilité de créer ou de supprimer un parking ;
 - une page d'édition d'un parking, avec la possibilité de modifier ses attributs ;
-- une page enfin qui affiche une carte Google Maps de la France, avec un marker pour chaque parking.
+- une page qui affiche une carte Google Maps, avec un marker pour chaque parking.
 
 Pour information, la création d'une application web sur la plate-forme Heroku prend moins de 5 minutes, comme l'explique cette [vidéo](https://vimeo.com/6916740) (vimeo).
